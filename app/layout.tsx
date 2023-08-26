@@ -14,13 +14,14 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className="min-h-screen">
         <ThemeProvider attribute="class" defaultTheme="light">
-          <div className="flex min-h-screen flex-col ">
-            <Header />
+        <div className="notion app">
+        <div className="viewport"></div>
+        <div className="frame">            <Header />
             <main className="flex-1">
            {children}     
-            </main>
-            
+            </main>     
             <Footer />
+            </div>
           </div>
           <Analytics />
           <TailwindIndicator />

@@ -361,7 +361,7 @@ pre::-webkit-scrollbar {
   --item-purple: rgba(103,36,222,.2);
   --item-gray: hsla(45,2%,60%,.4);
   --max-width: 960px;
-  --header-height: 45px
+  --header-height: 72px
 }
 
 .dark {
