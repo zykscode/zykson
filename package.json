@@ -11,9 +11,8 @@
 		"turbo": "next dev --turbo",
 		"start": "next start",
 		"lint": "next lint",
-		"preview": "next build && next start",
-		"postinstall": "prisma generate"
-	},
+		"preview": "next build && next start"
+		},
 	"devDependencies": {
 		"@types/node": "20.5.6",
 		"@types/react": "18.2.21"
