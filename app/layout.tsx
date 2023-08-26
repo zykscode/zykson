@@ -1,10 +1,10 @@
 import { Analytics } from "#/components/analytics";
-import Footer from "#/components/footer";
 import Header from "#/components/ui/header/header";
 import { TailwindIndicator } from "#/components/tailwind-indicator";
 import { ThemeProvider } from "#/components/theme-provider";
 
 import "#/styles/globals.css";
+import { Footer } from "#/components/footer";
 export default function RootLayout({
   children,
 }: {
@@ -16,7 +16,8 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light">
         <div className="notion app">
         <div className="viewport"></div>
-        <div className="frame">            <Header />
+        <div className="frame">           
+         <Header />
             <main className="flex-1">
            {children}     
             </main>     
