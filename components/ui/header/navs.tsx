@@ -9,7 +9,6 @@ import React from 'react';
 const navs = ['blog', 'portfolio', 'contact'];
 
 const Navs = () => {
-  console.log({ todo: 'Navs' });
   return (
     <nav className="nav-header-rhs breadcrumbs">
       {navs.map((nav) => {
