@@ -7,8 +7,8 @@ type Props = {}
 
 const Header = (props: Props) => {
   return (
-    <header className={styles.header}>
-      <div className={styles['nav-header']}>
+    <header className='header'>
+      <div className='nav-header'>
       <Breadcrumbs />
        <Navs/>
       </div>
