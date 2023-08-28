@@ -21,7 +21,6 @@ const PostCard =({post,image}:any)=> {
           width={image.width}
           blurDataURL={image.base64}
           /> 
-        
       </div>
         <h2 className="mb-1 text-xl">
           <Link href={post.url} className="text-blue-700 hover:text-blue-900 dark:text-blue-400">
