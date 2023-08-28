@@ -6,7 +6,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 
-const PostCard =({post,image})=> {
+const PostCard =({post,image}:any)=> {
  const src = image.src
  
   return (
