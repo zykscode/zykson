@@ -78,3 +78,14 @@ export type UserSubscriptionPlan = SubscriptionPlan &
 export type HomepageNavs = {
   mainNav: MainNavItem[];
 };
+
+export type BlurredPhoto =
+  | {
+      base64: string;
+      postId?: any;
+      src: string;
+      height: number;
+      width: number;
+      type?: string | undefined;
+    }
+  | undefined;
