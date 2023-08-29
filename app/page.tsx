@@ -41,7 +41,7 @@ const Page = async ({ children, ...props }: any) => {
   return (
     <div className="page-scroller">
       <CoverWrapper img={Me} />
-      <div className="mx-auto max-w-4xl py-6 lg:py-10 page  page-has-cover page-has-icon page-has-image-icon full-page index-page">
+      <div className="mx-auto max-w-4xl py-6 lg:py-10 page  page-has-cover t page-has-icon page-has-image-icon full-page index-page">
         <IconHero />
         <h1 className="title md:mt-6 lg:mt-10">{siteConfig.name}</h1>
         <div className="page-content page-content-has-aside">
