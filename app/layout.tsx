@@ -15,10 +15,10 @@ export default function RootLayout({
       <body className="min-h-screen">
         <ThemeProvider attribute="class" defaultTheme="light">
         <div className="notion app">
-        <div className="viewport"></div>
+        <div className="viewport"></div>  
         <div className="frame">           
          <Header />
-            <main className="flex-1">
+ <main className="flex-1">
            {children}     
             </main>     
             <Footer />
