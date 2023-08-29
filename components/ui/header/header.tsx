@@ -1,16 +1,13 @@
 import React from 'react'
-import styles from './style.module.css'
 import Breadcrumbs from './breadcrumbs'
 import Navs from './navs'
 
-type Props = {}
-
-const Header = (props: Props) => {
+const Header = () => {
   return (
-    <header className='header'>
-      <div className='nav-header'>
-      <Breadcrumbs />
-       <Navs/>
+    <header className="header">
+      <div className="nav-header">
+        <Breadcrumbs />
+        <Navs />
       </div>
     </header>
   )

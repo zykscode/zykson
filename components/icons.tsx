@@ -1,8 +1,6 @@
-import type { LucideProps } from 'lucide-react';
-
+import type { LucideProps } from 'lucide-react'
 
 export const Icons = {
-
   sun: ({ ...props }: LucideProps) => (
     <svg
       stroke="currentColor"
@@ -64,5 +62,4 @@ export const Icons = {
       ></path>
     </svg>
   ),
-
-};
+}

@@ -1,17 +1,19 @@
-import Image, { StaticImageData } from 'next/image';
-import React from 'react';
+import Image, { StaticImageData } from 'next/image'
+import React from 'react'
 
 type Props = {
-  img: {
-    base64: string;
-    img: {
-      src: string;
-      height: number;
-      width: number;
-    };
-    blurDataURL?: string;
-  }| StaticImageData;
-};
+  img:
+    | {
+        base64: string
+        img: {
+          src: string
+          height: number
+          width: number
+        }
+        blurDataURL?: string
+      }
+    | StaticImageData
+}
 
 const CoverWrapper = ({ img }: Props) => {
   return (
@@ -28,15 +30,10 @@ const CoverWrapper = ({ img }: Props) => {
           blurDataURL={img.base64}
         />
       ) : (
-        <Image
-          priority={true}
-          className="page-cover"
-          src={img}
-          alt="page cover wrapper"
-        />
+        <Image priority={true} className="page-cover" src={img} alt="page cover wrapper" />
       )}
     </div>
-  );
-};
+  )
+}
 
-export default CoverWrapper;
+export default CoverWrapper

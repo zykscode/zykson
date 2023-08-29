@@ -1,12 +1,10 @@
-'use client';
+'use client'
 
+import { ModeToggle } from '#/components/mode-toggle'
+import Link from 'next/link'
+import React from 'react'
 
-import { ModeToggle } from '#/components/mode-toggle';
-import Link from 'next/link';
-import React from 'react';
-
-
-const navs = ['blog', 'portfolio', 'contact'];
+const navs = ['blog', 'portfolio', 'contact']
 
 const Navs = () => {
   return (
@@ -16,11 +14,11 @@ const Navs = () => {
           <Link className="breadcrumb button capitalize" key={nav} href={`/${nav}`}>
             {nav}
           </Link>
-        );
+        )
       })}
-      <ModeToggle/>
+      <ModeToggle />
     </nav>
-  );
-};
+  )
+}
 
-export default Navs;
+export default Navs

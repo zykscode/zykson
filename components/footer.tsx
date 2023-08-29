@@ -1,20 +1,20 @@
-'use client';
-import { memo } from 'react';
-import {  FaGithub,  FaTwitter, FaYoutube } from 'react-icons/fa';
-import styles from './styles.module.css';
-import { ModeToggle } from './mode-toggle';
-import { siteConfig } from '#/config/site';
+'use client'
+import { memo } from 'react'
+import { FaGithub, FaTwitter, FaYoutube } from 'react-icons/fa'
+import styles from './styles.module.css'
+import { ModeToggle } from './mode-toggle'
+import { siteConfig } from '#/config/site'
 
-const author = 'zykson';
+const author = 'zykson'
 
 export const FooterImpl = () => {
-    const { twitter, github, youtube } = siteConfig.links;
-  
+  const { twitter, github, youtube } = siteConfig.links
+
   return (
     <footer className={styles.footer}>
       <div className={styles.copyright}>copyright 2022 zyk</div>
       <div className={styles.settings}>
-       <ModeToggle/>
+        <ModeToggle />
       </div>
       <div className={styles.social}>
         {twitter && (
@@ -54,7 +54,7 @@ export const FooterImpl = () => {
         )}
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export const Footer = memo(FooterImpl);
+export const Footer = memo(FooterImpl)

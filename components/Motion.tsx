@@ -1,17 +1,17 @@
-'use client';
+'use client'
 
-import { motion } from 'framer-motion';
-import React from 'react';
+import { motion } from 'framer-motion'
+import React from 'react'
 
-import styles from './PageSocial.module.css';
-import { cn } from '#/lib/utils';
+import styles from './PageSocial.module.css'
+import { cn } from '#/lib/utils'
 
 type Props = {
-  href: string;
-  title: string;
-  name: string;
-  icon: JSX.Element;
-};
+  href: string
+  title: string
+  name: string
+  icon: JSX.Element
+}
 
 const Motion = ({ href, title, name, icon }: Props) => {
   return (
@@ -33,7 +33,7 @@ const Motion = ({ href, title, name, icon }: Props) => {
 
       <div className={styles.actionBg}>{icon}</div>
     </motion.a>
-  );
-};
+  )
+}
 
-export default Motion;
+export default Motion
