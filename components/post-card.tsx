@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Post } from '#/.contentlayer/generated'
 import { format, parseISO } from 'date-fns'
 import { StaticImport } from 'next/dist/shared/lib/get-img-props'

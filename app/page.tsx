@@ -53,7 +53,7 @@ const Page = async ({ children, ...props }: any) => {
               {posts?.length ? (
                 <div className="grid gap-10 sm:grid-cols-2">
                   {/* {posts.map((post, index) => (
-            <article
+            <article 
               key={post._id}
               className="group relative flex flex-col space-y-2"
             >
