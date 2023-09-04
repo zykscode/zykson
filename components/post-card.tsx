@@ -9,8 +9,8 @@ const PostCard = ({ post, image }: any) => {
   const src = image.src
 
   return (
-    <div className="mb-8">
-      <div className="collection-card-cover">
+    <div className="mb-8 collection-card collection-card-size-medium">
+      <div className="collection-card-cover ">
         <Image
           placeholder="blur"
           src={src.substring(6)}
@@ -20,18 +20,39 @@ const PostCard = ({ post, image }: any) => {
           blurDataURL={image.base64}
         />
       </div>
-      <h2 className="mb-1 text-xl">
-        <Link href={post.url} className="text-blue-700 hover:text-blue-900 dark:text-blue-400">
-          {post.title}
-        </Link>
-      </h2>
-      <time dateTime={post.date} className="mb-2 block text-xs text-gray-600">
-        {format(parseISO(post.date), 'LLLL d, yyyy')}
-      </time>
-      <div
-        className="text-sm [&>*]:mb-3 [&>*:last-child]:mb-0"
-        dangerouslySetInnerHTML={{ __html: post.body.html }}
-      />
+
+      <div className="collection-card-body">
+        <div className="collection-card-property">
+          <span className="property property-title">
+            <span className="page-link">
+              <span className="page-title">
+                <span className="page-title-text">{post.title}</span>
+              </span>
+            </span>
+          </span>
+        </div>
+        <div className="collection-card-property">
+          <span className="property property-text">{post.summary}</span>
+        </div>
+        <div className="collection-card-property">
+          <span className="property property-date">
+            <time dateTime={post.date} className="mb-2 block text-xs text-gray-600">
+              {format(parseISO(post.date), 'LLLL d, yyyy')}
+            </time>
+          </span>
+        </div>
+        <div className="collection-card-property">
+          <span className="property property-multi_select">
+            {post.tags!.map((tag) => {
+              return (
+                <div key={tag.name} className={`property-multi_select-item item-yellow`}>
+                  {tag.name}
+                </div>
+              )
+            })}
+          </span>
+        </div>
+      </div>
     </div>
   )
 }
