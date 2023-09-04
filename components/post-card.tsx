@@ -43,10 +43,10 @@ const PostCard = ({ post, image }: any) => {
         </div>
         <div className="collection-card-property">
           <span className="property property-multi_select">
-            {post.tags!.map((tag) => {
+            {post.tags!.map((tag: any) => {
               return (
-                <div key={tag.name} className={`property-multi_select-item item-yellow`}>
-                  {tag.name}
+                <div key={tag} className={`property-multi_select-item item-yellow`}>
+                  {tag}
                 </div>
               )
             })}
