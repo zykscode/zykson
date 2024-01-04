@@ -8,7 +8,7 @@ import { Footer } from '#/components/footer'
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="min-h-screen">
+      <body className="min-h-screen bg-yellow-200  p">
         <ThemeProvider attribute="class" defaultTheme="light">
           <div className="notion app">
             <div className="viewport"></div>
